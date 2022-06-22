@@ -5,6 +5,9 @@ $(function () {
             dateFormat: 'yy/mm/dd',
         });
     });
+    $(function () {
+        flatpickr($('input[name="date2"]'), {"locale": "ja"});
+    });
 
     // 参加人数分の氏名欄を生成
     $('#form-number').click(function () {
