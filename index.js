@@ -6,7 +6,7 @@ $(function () {
         });
     });
     $(function () {
-        flatpickr($('input[name="date2"]'), {"locale": "ja"});
+        flatpickr($('input[name="date2"]'), {"locale":"ja","enableTime":true,"plugins":[new confirmDatePlugin({})]});
     });
 
     // 参加人数分の氏名欄を生成
