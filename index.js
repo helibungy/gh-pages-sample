@@ -30,15 +30,15 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        var date = $('input[name="date"]').val();
-        var number = $('input[name="number"]:checked').val();
-        var names = '';
-        $('#form-name').children().each(function (i, elm) {
-            names += $(elm).val() + '、';
-        })
-        names = names.slice(0, -1);
+        var date = $('input[name="reservation_date"]').val();
+        var number = $('input[name="student_number"]:checked').val();
+        var name = $('input[name="student_name"]').val();
+        //$('#form-name').children().each(function (i, elm) {
+        //    names += $(elm).val() + '、';
+        //})
+        //names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `希望日：${date}\n人数：${number}\n氏名：${name}`;
         sendText(msg);
 
         return false;
