@@ -8,7 +8,7 @@ $(function () {
     $(function () {
         //flatpickr($('input[name="date2"]'), {"locale":"ja","enableTime":true,"plugins":[new confirmDatePlugin({})]});
         $.datetimepicker.setLocale('ja');
-        $('input[name="date2"]').datetimepicker({
+        $('input[name="reservation_date"]').datetimepicker({
             format: "Y/m/d H:i",
             allowTimes:[
               '11:00', '12:00', '13:00', '14:00',
