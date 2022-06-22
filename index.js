@@ -31,7 +31,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var date = $('input[name="reservation_date"]').val();
-        var number = $('input[name="student_number"]:checked').val();
+        var number = $('input[name="student_number"]').val();
         var name = $('input[name="student_name"]').val();
         //$('#form-name').children().each(function (i, elm) {
         //    names += $(elm).val() + '、';
