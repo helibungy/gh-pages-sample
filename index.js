@@ -30,6 +30,7 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
+        var type = $('input[name="type"]').val();
         var date = $('input[name="reservation_date"]').val();
         var number = $('input[name="student_number"]').val();
         var name = $('input[name="student_name"]').val();
@@ -38,7 +39,7 @@ $(function () {
         //})
         //names = names.slice(0, -1);
 
-        var msg = `予約日：${date}\n生徒さん番号：${number}\nお名前(姓)：${name}`;
+        var msg = `種別：${type}\n予約日：${date}\n生徒さん番号：${number}\nお名前(姓)：${name}`;
         sendText(msg);
 
         return false;
