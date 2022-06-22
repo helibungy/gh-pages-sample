@@ -38,7 +38,7 @@ $(function () {
         //})
         //names = names.slice(0, -1);
 
-        var msg = `予約日：${date}\n人数：${number}\n氏名：${name}`;
+        var msg = `予約日：${date}\n生徒さん番号：${number}\nお名前(姓)：${name}`;
         sendText(msg);
 
         return false;
