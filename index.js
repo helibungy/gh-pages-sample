@@ -30,8 +30,8 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        //var type = $('[name="type"]').val();
-        var type = $("[name='type']").text();
+        //var type = $('.mt-3[name="type"]').val();
+        var type = $(".mt-3[name='type']").text();
         var date = $('input[name="reservation_date"]').val();
         var number = $('input[name="student_number"]').val();
         var name = $('input[name="student_name"]').val();
