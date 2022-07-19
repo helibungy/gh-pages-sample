@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャンセルフォーム</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css" integrity="sha512-bYPO5jmStZ9WI2602V2zaivdAnbAhtfzmxnEGh9RwtlI00I9s8ulGe4oBa5XxiC6tCITJH/QG70jswBhbLkxPw==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <form class="w-75 mx-auto">
+
+        <p class="mt-3">以下にキャンセル情報を入力して送信ボタンを押してください！</p>
+
+        <iframe src="https://calendar.google.com/calendar/embed?src=ahno79b51jc5og0c253q5k0v4o%40group.calendar.google.com&ctz=Asia%2FTokyo" style="border: 0" width="380" height="1200" frameborder="0" scrolling="no"></iframe>
+        
+        <!--<p class="mt-3">希望日</p>
+        <div>
+            <input class="form-control" name="date" maxlength="10">
+        </div>-->
+        <p class="mt-3" name="type">予約キャンセル</p>
+        <p class="mt-3">キャンセル日時</p>
+        <div>
+            <input type="text" class="form-control" name="reservation_date" maxlength="10">
+        </div>
+        <p class="mt-3">生徒さん番号</p>
+        <div id="form-number">
+            <input type="text" inputmode="numeric" pattern="\d*" class="form-control w-100 mt-1" name="student_number" maxlength="10">
+            <!--<input type="text" class="form-control w-100 mt-1" name="student_number" maxlength="10">-->
+        </div>
+        <p class="mt-3">お名前(姓)</p>
+        <div id="form-name">
+            <input type="text" class="form-control w-100 mt-1" name="student_name" maxlength="10">
+        </div>
+
+        <input type="submit" class="mt-4 btn btn-primary" value="送信">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha512-AIOTidJAcHBH2G/oZv9viEGXRqDNmfdPVPYOYKGy3fti0xIplnlgMHUGfuNRzC6FkzIo0iIxgFnr9RikFxK+sw==" crossorigin="anonymous"></script>
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
